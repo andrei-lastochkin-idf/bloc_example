@@ -1,0 +1,3 @@
+## Usage
+
+Domain layer.
