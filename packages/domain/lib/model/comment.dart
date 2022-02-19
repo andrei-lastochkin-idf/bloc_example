@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-Comment itemUserFromJson(String str) => Comment.fromJson(json.decode(str));
+Comment commentFromJson(String str) => Comment.fromJson(json.decode(str));
 
-String itemUserToJson(Comment data) => json.encode(data.toJson());
+String commentToJson(Comment data) => json.encode(data.toJson());
 
 class Comment {
   int postId;

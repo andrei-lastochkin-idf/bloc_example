@@ -34,7 +34,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         Uri.parse('https://jsonplaceholder.typicode.com/comments/$_page');
     final _client = BasicAuthClient('', '');
     final _response = await _client.get(_uri);
-    final _result = itemUserFromJson(_response.body);
+    final _result = commentFromJson(_response.body);
+
     comments.add(_result);
   }
 }
